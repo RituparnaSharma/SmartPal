@@ -29,6 +29,7 @@ Deprecated==1.2.14
 effdet==0.4.1
 emoji==2.10.0
 exceptiongroup==1.2.0
+faiss-cpu==1.7.4
 fastapi==0.109.0
 filelock==3.13.1
 filetype==1.2.0
@@ -134,6 +135,7 @@ python-iso639==2024.1.2
 python-magic==0.4.27
 python-multipart==0.0.6
 pytz==2023.3.post1
+pywin32==306
 PyYAML==6.0.1
 rapidfuzz==3.6.1
 referencing==0.32.1
