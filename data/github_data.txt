@@ -1,0 +1,139 @@
+
+
+"name": "intro-to-ds",
+"description": "This is an overview of Data Science",
+"url": "https://github.com/RituparnaSharma/intro-to-ds",
+"complete date": "2019-09-27T20:11:47Z"
+
+
+"name": "dsmp-pre-work",
+"description": "Code repository for the Pre Work program at GreyAtom",
+"url": "https://github.com/RituparnaSharma/dsmp-pre-work",
+"complete date": "2019-10-01T14:57:03Z"
+
+
+"name": "ga-learner-dsmp-repo",
+"description": "A collection of projects as part of the Data Science Masters Program at GreyAtom EduTech Pvt Ltd",
+"url": "https://github.com/RituparnaSharma/ga-learner-dsmp-repo",
+"complete date": "2019-10-07T11:55:40Z"
+
+
+"name": "Github-tutorial-30-nov-2019",
+"description": "github tutorial",
+"url": "https://github.com/RituparnaSharma/Github-tutorial-30-nov-2019",
+"complete date": "2019-11-30T05:00:10Z"
+
+
+"name": "olympic-hero",
+"description": "Olympic Hero",
+"url": "https://github.com/RituparnaSharma/olympic-hero",
+"complete date": "2020-03-04T17:52:32Z"
+
+
+"name": "-Time-series-prediction",
+"description": "This is a simple time series prediction model ,where we forecast the amount ofsales in a given month.",
+"url": "https://github.com/RituparnaSharma/-Time-series-prediction",
+"complete date": "2020-03-09T14:40:13Z"
+
+
+"name": "Data-science-mini-projects",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Data-science-mini-projects",
+"complete date": "2020-09-08T17:37:55Z"
+
+
+"name": "React-js-projects",
+"description": "ABCD of reacty JS",
+"url": "https://github.com/RituparnaSharma/React-js-projects",
+"complete date": "2020-11-03T04:18:11Z"
+
+
+"name": "BERT-Practice",
+"description": null,
+"url": "https://github.com/RituparnaSharma/BERT-Practice",
+"complete date": "2020-11-03T05:26:54Z"
+
+
+"name": "End-to-end-machine-learning-project",
+"description": null,
+"url": "https://github.com/RituparnaSharma/End-to-end-machine-learning-project",
+"complete date": "2020-12-13T17:34:41Z"
+
+
+"name": "Open-CV-and-CNN-Projects",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Open-CV-and-CNN-Projects",
+"complete date": "2021-01-02T06:00:26Z"
+
+
+"name": "Practise-Repo",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Practise-Repo",
+"complete date": "2021-01-18T13:14:45Z"
+
+
+"name": "Flask--Payment",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Flask--Payment",
+"complete date": "2021-01-30T05:30:20Z"
+
+
+"name": "Deep_Learning-Practise",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Deep_Learning-Practise",
+"complete date": "2021-11-07T07:39:31Z"
+
+
+"name": "wafer_mlops",
+"description": "MLOPS usecase",
+"url": "https://github.com/RituparnaSharma/wafer_mlops",
+"complete date": "2022-06-04T15:16:34Z"
+
+
+"name": "Mlops_opensource",
+"description": null,
+"url": "https://github.com/RituparnaSharma/Mlops_opensource",
+"complete date": "2022-06-09T10:15:08Z"
+
+
+"name": "rebase_practise",
+"description": null,
+"url": "https://github.com/RituparnaSharma/rebase_practise",
+"complete date": "2022-07-10T11:08:16Z"
+
+
+"name": "account_analyzer",
+"description": null,
+"url": "https://github.com/RituparnaSharma/account_analyzer",
+"complete date": "2022-10-18T16:10:33Z"
+
+
+"name": "Mahindra first choice",
+"description": "Customer Lifetime value prediction - Based on Customer segments, predict the revenue that can be extracted from each segment over a life of the car-Regression/Time Series",
+"url": "https://github.com/RituparnaSharma/Projects/tree/master/Mahindra%20first%20choice%20ser",
+"complete date": "july 15 2020"
+
+
+"name": "Predict virality of newspaper article using web scrapping",
+"description": "Scrap Articles from Times of India , Hindustan Times and Indain express.create a deep learning model to train a supervised dataset where popularity was the target column.predict scrap articles from the respective newspaper to assume the popularity.",
+"url": "https://github.com/RituparnaSharma/Projects/tree/master/Predict%20virality%20of%20newspaper%20article%20using%20web%20scrapping",
+"complete date": "april 27 2020"
+
+
+"name": "Text Summerization using Transformer",
+"description": "uses the Hugging Face Pytorch Transformer library to run extractive summaries.",
+"url": "https://github.com/RituparnaSharma/Projects/tree/master/Text%20Summerization%20using%20Transformer",
+"complete date": "october 30 2020"
+
+
+"name": "The Credit Consumption Prediction Challenge",
+"description": "The bank(CMB) wants to find out the spending pattern of the customers in order to adapt new strategic plans to retain and reward their customers.",
+"url": "https://github.com/RituparnaSharma/Projects/tree/master/The%20Credit%20Consumption%20Prediction%20Challenge",
+"complete date": "mar 7 2020"
+
+
+"name": "Twitter comments Sentiment Analyisis",
+"description": "It is a simple sentiment analysis prediction model",
+"url": "https://github.com/RituparnaSharma/Projects/tree/master/Twitter%20comments%20Sentiment%20Analyisis",
+"complete date": "october 30 2020"
+

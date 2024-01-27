@@ -1,0 +1,117 @@
+Name:
+Rituparna Sharma
+
+Profile Headline:
+Data Scientist at Lentra
+
+Current Position:
+Data Scientist at Lentra
+Since: December 2022
+Location: Bengaluru, Karnataka, India
+
+Industry Type:
+Information Technology & Services
+
+About:
+A certified data scientist with a strong foundation in computer science and engineering. I have over a year of experience in software development, specializing in Python, machine learning, statistical analysis, and NLP. My career is marked by hands-on experience in numerous industry-related projects and success in various hackathons. I am seeking employment with an organization that offers a positive environment to learn and implement new technologies for its advancement.
+
+Work Experience:
+Data Scientist, Lentra
+Full-time, Bengaluru, Karnataka, India
+December 2022 - Present (1 year 2 months)
+
+Leading a project on transaction mining, categorizing bank statement transactions.
+Building and presenting comprehensive transaction categorization reports.
+Data Engineer, Lentra
+Full-time, Bengaluru, Karnataka, India
+August 2021 - December 2022 (1 year 5 months)
+
+Promoted after completing Lentra's FastTrack program.
+Developed data engineering pipelines for HDFC Bank and Viki (Rakuten).
+Data Scientist Intern, Lentra
+Internship
+February 2021 - August 2021 (7 months)
+
+Developed a fuzzy match solution for Kotak Mahindra Bank.
+Worked on Spark-based machine learning models.
+
+Education:
+GreyAtom
+Data Science Master's Program
+2019 - 2020
+
+Girijananda Chowdhury Institute of Management & Technology
+Bachelor of Technology, Computer Science
+2015 - 2019
+Grade: 6.82
+
+Licenses & Certifications:
+CutShort Certified Python - Advanced, CutShort, Nov 2020
+SQL for Data Science, Coursera, Sep 2020
+Data Science Masters Program, GreyAtom, Jul 2020
+Neural Networks and Deep Learning, Coursera, Jun 2020
+Sentiment Analysis Hackathon Challenge, GreyAtom, Jun 2020
+Natural Language Processing in TensorFlow, Coursera, Apr 2020
+Sequence, Time Series and Prediction, Coursera, Apr 2020
+Credit Consumption Prediction Challenge Hackathon Winner, GreyAtom, Mar 2020
+Certified Big Data Expert, Edureka, Jan 2019
+Cloud Computing and Deployment, Webtek Labs Pvt. Ltd., Jul 2018
+
+Skills:
+Python (Programming Language) - Passed LinkedIn Skill Assessment
+Machine Learning - Passed LinkedIn Skill Assessment
+Data Science
+Big Data
+Data Analysis
+Amazon Web Services (AWS)
+Pandas (Software)
+SQL
+PyTorch
+Scikit-Learn
+Natural Language Processing (NLP)
+Deep Learning
+
+Publications:
+"A Survey on Twitter Sentiment Analysis," International Journal of Computer Sciences and Engineering, Nov 30, 2018. URL
+Interests and Hobbies:
+
+Playing cricket and mobile games.
+Won trophies in league cricket games.
+Selected in EA-Sport preliminary round in COD (Call of Duty) mobile games.
+
+Languages:
+Assamese (Native)
+English
+Hindi
+Personal Information Document
+
+Name:
+Rituparna Sharma
+
+Date of Birth:
+May 11, 1996
+
+Place of Birth:
+Boko, Guwahati, Assam
+
+Nationality:
+Indian
+
+Contact Information:
+Address: Boko, Guwahati
+Email: sharmarituparna66@gmail.com
+Family Background:
+
+Father's Name: Prasanna Kumar Sharma
+Mother's Name: Anima Devi
+Siblings: One brother - Hriday Kumar Sharma
+
+Early Childhood:
+Born and raised in Boko, Navapur.
+Grew up in a close-knit community.
+Showed an early interest in sports and the arts, participating in local community events.
+
+Education:
+high school: Shankardev Sishu Vidya Niketan, Boko School (2002 - 2012)
+college : Anundoram Borooah Academy
+Undergraduate: Bachelor of Science in Computer Science and Engineering, Assam Science and Technology University (2015 - 2019)
