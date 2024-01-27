@@ -4,9 +4,6 @@ import streamlit as st
 import time
 import google
     
-# # To load the vector store later
-# with open('Training/models/parser_model10.pkl', 'rb') as f:
-#     loaded_vector_store = pickle.load(f)
 
 # Function to set the stop flag
 def stop():
