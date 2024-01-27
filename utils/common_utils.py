@@ -2,7 +2,6 @@
 # from langchain_google_genai import GoogleGenerativeAIEmbeddings
 # from langchain.vectorstores import Chroma
 import pickle
-
 def load_vectors():
         # To load the vector store later
     with open('models/modeldb.pkl', 'rb') as f:

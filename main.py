@@ -3,13 +3,18 @@ from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 import streamlit as st
 import time
 import google
-    
+import subprocess
+import sys
+
 
 # Function to set the stop flag
 def stop():
     st.session_state.stop_pressed = True
-
+def deploy():
+    subprocess.run([f"{sys.executable}",  "training/vector_store.py"])
 if __name__ == "__main__" :
+    st.button("deploy", on_click=deploy)
+
     # Custom CSS for styling
     st.markdown("""
         <style>
@@ -27,11 +32,12 @@ if __name__ == "__main__" :
             display: flex;
             gap: 10px;
         }
-        .stButton>button {
+        /* Styling specifically for the 'stop' button */
+        .stButton > button:nth-of-type(1) {
             width: 100%;
             color: white;
-            background-color: transparent; /* Make button background transparent */
-            border: 2px solid #4CAF50; /* Optional: add border */
+            background-color: #FF4136; /* Red background for stop button */
+            border: 2px solid #FF4136; /* Red border for stop button */
             border-radius: 5px;
         }
         </style>
