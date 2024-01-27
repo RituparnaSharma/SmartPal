@@ -15,25 +15,26 @@ def deploy():
 if __name__ == "__main__" :
     st.button("deploy", on_click=deploy)
 
-    # Custom CSS for styling
+
+    # JavaScript to add a unique class to the 'Stop' button
+    st.markdown("""
+        <script>
+        const addButtonClass = () => {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if (btn.innerText === 'Stop') {
+                    btn.classList.add('stop-button');
+                }
+            });
+        }
+        addButtonClass();
+        </script>
+    """, unsafe_allow_html=True)
+
+    # Custom CSS for the 'stop-button' class
     st.markdown("""
         <style>
-        .chat-title {
-            color: #4CAF50; 
-            text-align: center;
-        }
-        .chat-box {
-            background-color: #f2f2f2;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .chat-input {
-            display: flex;
-            gap: 10px;
-        }
-        /* Styling specifically for the 'stop' button */
-        .stButton > button:nth-of-type(1) {
+        .stop-button {
             width: 100%;
             color: white;
             background-color: #FF4136; /* Red background for stop button */
@@ -42,7 +43,6 @@ if __name__ == "__main__" :
         }
         </style>
     """, unsafe_allow_html=True)
-
     # Title with custom class for styling
     st.markdown("<h1 class='chat-title'>SmartPal</h1>", unsafe_allow_html=True)
 
