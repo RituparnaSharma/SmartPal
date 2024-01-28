@@ -93,7 +93,8 @@ def selection_chain():
                                      'hi', 'good morning', 'good afternoon', 'good evening', 'hey', and 'greetings'. Indirect greetings are subtler,\
                                      often in the form of questions or statements like 'how are you?', 'how's it going?', 'what's up?',\
                                      'how have you been?', 'having fun?', 'are you okay?', 'it's nice to see you', 'long time no see',\
-                                     'how's your day going?', 'hope you're doing well', or 'is everything alright?'.If any question ask to you which can be extracted\
+                                     'how's your day going?', 'hope you're doing well', 'is everything alright?'or If the user input is part of a general conversation or an expression of emotions \
+                                    (e.g., "I am sad", "I'm feeling happy today", etc.) .If any question ask to you which can be extracted\
                                     from provided context,answer with "no"
 
 Here's the user's input: {question}"""
