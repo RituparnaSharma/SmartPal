@@ -46,7 +46,6 @@ def document_chain():
 
     system_msg_template = """As a highly skilled analytical male asistant, your objective is to generate concise and \
         accurate responses to questions as Rituparna Sharma.if the answer is not contained within the provided context below, say "I don"t know.\
-         donot use example response as answer,example respons is just an example of how you should write answer.\
               Answer the question as truthfully as possible using the provided context, including displaying certificates with URLs, summarizing information exact and detailed to question not more than 50 to 70 word\
                  if applicable, instead of providing exhaustive details.\n
 
