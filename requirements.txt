@@ -18,12 +18,12 @@ cffi==1.16.0
 chardet==5.2.0
 charset-normalizer==3.3.2
 chroma-hnswlib==0.7.3
-chromadb==0.3.29
 click==8.1.7
 colorama==0.4.6
 coloredlogs==15.0.1
 contourpy==1.2.0
 cryptography==42.0.1
+chromadb==0.3.29
 cycler==0.12.1
 dataclasses-json==0.6.3
 Deprecated==1.2.14
@@ -31,7 +31,7 @@ effdet==0.4.1
 emoji==2.10.0
 exceptiongroup==1.2.0
 faiss-cpu==1.7.4
-fastapi==0.109.0
+fastapi==0.85.1
 filelock==3.13.1
 filetype==1.2.0
 flatbuffers==23.5.26
@@ -136,6 +136,7 @@ python-iso639==2024.1.2
 python-magic==0.4.27
 python-multipart==0.0.6
 pytz==2023.3.post1
+pywin32==306
 PyYAML==6.0.1
 rapidfuzz==3.6.1
 referencing==0.32.1
