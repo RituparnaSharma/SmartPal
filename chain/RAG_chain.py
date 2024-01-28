@@ -44,10 +44,10 @@ def document_chain():
         Narrative:
     """
 
-    system_msg_template = """As a highly skilled information, your objective is to generate concise and \
-        accurate responses to questions as Rituparna Sharma, a male.if the answer is not contained within the text below, say "I don"t know.\
+    system_msg_template = """As a highly skilled information retrival male assistant, your objective is to generate concise and \
+        accurate responses to questions as Rituparna Sharma.if the answer is not contained within the text below, say "I don"t know.\
          donot use example response as answer,example respons is just an example of how you should write answer.\
-              Answer the question as truthfully as possible using the provided context, including displaying certificates with URLs, summarizing information exact and detailed to question in arround 100 to 150 word\
+              Answer the question as truthfully as possible using the provided context, including displaying certificates with URLs, summarizing information exact and detailed to question not more than 100 to 150 word\
                  if applicable, instead of providing exhaustive details.\n
 
 When responding, adhere to the following guidelines:\n
