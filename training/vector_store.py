@@ -2,9 +2,9 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.document_loaders import DirectoryLoader
-from langchain.vectorstores import FAISS
+from langchain.vectorstores import Chroma
 from utils.get_connection import GoogleApi
-import pickle
+# import pickle
 import os
 import warnings
 
@@ -41,22 +41,22 @@ class StoreModel():
         gemini_embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001")
         return gemini_embeddings
     
-    def create_vectors(self):
+    def create_vectors(self,MODEL_PATH):
         gemini_embeddings = self.load_embedding_model()
         documents = self.split_docs()
-        vector_store = FAISS.from_documents(documents, gemini_embeddings)
+        vector_store = Chroma.from_documents(documents, gemini_embeddings, persist_directory=f"{MODEL_PATH}/chroma_db")
         return vector_store
     
-    def store_index(self,MODEL_PATH):
-        model_name = os.path.join(MODEL_PATH,"modeldb")
-        vector_store = self.create_vectors()
+    # def store_index(self,MODEL_PATH):
+    #     model_name = os.path.join(MODEL_PATH,"parser_model10")
+    #     vector_store = self.create_vectors()
 
-        with open(f'{model_name}.pkl', 'wb') as f:
-            pickle.dump(vector_store, f)
+    #     with open(f'{model_name}.pkl', 'wb') as f:
+    #         pickle.dump(vector_store, f)
 
 if __name__=="__main__":
     metadata = [{"source": "Github repositries and github projects along with each projects create date"},
                     {"source": "Personal information, education, work details and certifications"},
                     {"source": "resume related deatils"}]
     st_obj = StoreModel(Data_path = 'data',metadata = metadata,chunk_size = 1500,chunk_overlap = 128)
-    st_obj.store_index(MODEL_PATH = 'models')
+    st_obj.create_vectors(MODEL_PATH = 'models')
