@@ -1,8 +1,45 @@
 Name:
 Rituparna Sharma
 
-Profile Headline:
-Data Scientist at Lentra
+Date of Birth:
+May 11, 1996
+
+Place of Birth:
+Boko, Guwahati, Assam
+
+Nationality:
+Indian
+
+Contact Information/address/contatct address:
+Address: Boko, Guwahati
+Email: sharmarituparna66@gmail.com
+    Family Background:
+
+    Father's Name: Prasanna Kumar Sharma
+    Mother's Name: Anima Devi
+    Siblings: One brother - Hriday Kumar Sharma
+
+    Early Childhood:
+    Born and raised in Boko, Navapur.
+    Grew up in a close-knit community.
+    Showed an early interest in sports and the arts, participating in local community events.
+
+Education:
+high school: Shankardev Sishu Vidya Niketan, Boko School (2002 - 2012)
+college : Anundoram Borooah Academy
+Undergraduate: Bachelor of Science in Computer Science and Engineering, Assam Science and Technology University (2015 - 2019)
+
+Education:
+GreyAtom
+Data Science Master's Program
+2019 - 2020
+
+Girijananda Chowdhury Institute of Management & Technology
+Bachelor of Technology, Computer Science
+2015 - 2019
+
+Working as a:
+Data Scientist at Lentra(Bengaluru)
 
 Current Position:
 Data Scientist at Lentra
@@ -35,16 +72,6 @@ February 2021 - August 2021 (7 months)
 Developed a fuzzy match solution for Kotak Mahindra Bank.
 Worked on Spark-based machine learning models.
 
-Education:
-GreyAtom
-Data Science Master's Program
-2019 - 2020
-
-Girijananda Chowdhury Institute of Management & Technology
-Bachelor of Technology, Computer Science
-2015 - 2019
-Grade: 6.82
-
 Licenses & Certifications:
 CutShort Certified Python - Advanced, CutShort, Nov 2020
 SQL for Data Science, Coursera, Sep 2020
@@ -73,8 +100,8 @@ Deep Learning
 
 Publications:
 "A Survey on Twitter Sentiment Analysis," International Journal of Computer Sciences and Engineering, Nov 30, 2018. URL
-Interests and Hobbies:
 
+Interests and Hobbies:
 Playing cricket and mobile games.
 Won trophies in league cricket games.
 Selected in EA-Sport preliminary round in COD (Call of Duty) mobile games.
@@ -83,35 +110,3 @@ Languages:
 Assamese (Native)
 English
 Hindi
-Personal Information Document
-
-Name:
-Rituparna Sharma
-
-Date of Birth:
-May 11, 1996
-
-Place of Birth:
-Boko, Guwahati, Assam
-
-Nationality:
-Indian
-
-Contact Information:
-Address: Boko, Guwahati
-Email: sharmarituparna66@gmail.com
-Family Background:
-
-Father's Name: Prasanna Kumar Sharma
-Mother's Name: Anima Devi
-Siblings: One brother - Hriday Kumar Sharma
-
-Early Childhood:
-Born and raised in Boko, Navapur.
-Grew up in a close-knit community.
-Showed an early interest in sports and the arts, participating in local community events.
-
-Education:
-high school: Shankardev Sishu Vidya Niketan, Boko School (2002 - 2012)
-college : Anundoram Borooah Academy
-Undergraduate: Bachelor of Science in Computer Science and Engineering, Assam Science and Technology University (2015 - 2019)
