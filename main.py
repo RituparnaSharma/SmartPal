@@ -49,7 +49,7 @@ if __name__ == "__main__" :
 
 
     if 'CHAIN_MEMORY' not in st.session_state:
-        st.session_state.CHAIN_MEMORY=ConversationBufferWindowMemory(k=5,return_messages=True,memory_key="chat_history")
+        st.session_state.CHAIN_MEMORY=ConversationBufferWindowMemory(k=2,return_messages=True,memory_key="chat_history")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []

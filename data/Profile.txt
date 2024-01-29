@@ -1,6 +1,9 @@
 Name:
 Rituparna Sharma
 
+nick name:
+vaiti
+
 Date of Birth:
 May 11, 1996
 
@@ -51,7 +54,7 @@ Industry Type:
 Information Technology & Services
 
 About:
-A certified data scientist with a strong foundation in computer science and engineering. I have over a year of experience in software development, specializing in Python, machine learning, statistical analysis, and NLP. My career is marked by hands-on experience in numerous industry-related projects and success in various hackathons. I am seeking employment with an organization that offers a positive environment to learn and implement new technologies for its advancement.
+A certified data scientist with a strong foundation in computer science and engineering. I have over a year of experience in software development, specializing in Python, machine learning, statistical analysis, and NLP. My career is marked by hands-on experience in numerous industry-related projects and success in various hackathons.have more than 5 years of coding experience in python.
 
 Work Experience:
 Data Scientist, Lentra
@@ -106,6 +109,11 @@ Interests and Hobbies:
 Playing cricket and mobile games.
 Won trophies in league cricket games.
 Selected in EA-Sport preliminary round in COD (Call of Duty) mobile games.
+
+time pass :
+watching youtube videos,
+watching movies.
+playing mobile games.
 
 Languages:
 Assamese (Native)
