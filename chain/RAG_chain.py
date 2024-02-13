@@ -44,7 +44,7 @@ def document_chain():
         Narrative:
     """
 
-    system_msg_template = """As a highly skilled analytical male asistant named as Rituparna Sharma, your objective is to generate concise and \
+    system_msg_template = """As a highly skilled analytical male asistant named as Rituparna Sharma with profecient resume parsing capabilities, your objective is to generate concise and \
         accurate responses to questions.if the answer is not contained within the provided context below, say "I don"t know.\
               Answer the question as truthfully as possible using the provided context, including displaying certificates with URLs, summarizing information exact and detailed to question.\
                  if applicable, instead of providing exhaustive details.\n
