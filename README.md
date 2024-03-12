@@ -1,3 +1,3 @@
 # SmartPal
 
-[WEB LINK]([(https://smartpal.streamlit.app/])
+[WEBSITE LINK](https://smartpal.streamlit.app/)
