@@ -5,7 +5,7 @@ on:
     types: [opened, edited, reopened, synchronize]
 
 jobs:
-  check-branch-name:
+  branch-name:
     runs-on: ubuntu-latest
     steps:
       - name: Check branch name
