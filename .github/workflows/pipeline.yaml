@@ -1,0 +1,18 @@
+name: Enforce Branch Name Convention
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH_NAME="${{ github.head_ref }}"
+          echo "Checking branch name: $BRANCH_NAME"
+          if [[ ! "$BRANCH_NAME" =~ ^(fix|feature|docs)- ]]; then
+            echo "❌ Branch name must start with fix-, feature-, or docs-"
+            exit 1
+          fi
