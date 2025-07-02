@@ -8,7 +8,7 @@ GoogleApi.create_connection()
 
 
 def load_question_generation_model():
-    model = ChatGoogleGenerativeAI(model="gemini-pro" ,  
+    model = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp" ,  
                                     temperature=0.7,
                                     max_tokens=256,
                                     top_p=1,
@@ -18,7 +18,7 @@ def load_question_generation_model():
     return model
 
 def load_document_model(temperature:float):
-    model = ChatGoogleGenerativeAI(model="gemini-pro",
+    model = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp",
                             temperature=temperature,
                             convert_system_message_to_human=True)
     return model
