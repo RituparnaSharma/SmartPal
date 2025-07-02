@@ -62,7 +62,6 @@ def document_chain():
 9.  **Conclusion:** End your response by briefly summarizing the main points you have addressed. You may also offer additional relevant information if it is helpful to the user.
 10. **Formatting:** Use Markdown for richer presentation (like bullet points) only when it is appropriate and enhances clarity.
 """
-"""
 
     human_msg_template = HumanMessagePromptTemplate.from_template(template=human_prompt,input_variables=["context","question"])
     prompt_template = ChatPromptTemplate.from_messages([SystemMessagePromptTemplate.from_template(system_msg_template),human_msg_template])
