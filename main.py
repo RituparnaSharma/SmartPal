@@ -66,7 +66,7 @@ if __name__ == "__main__":
     # Initialize session state variables
     if 'CHAIN_MEMORY' not in st.session_state:
         st.session_state.CHAIN_MEMORY = ConversationBufferWindowMemory(
-            k=2, 
+            k=5, 
             return_messages=True, 
             memory_key="chat_history"
         )
