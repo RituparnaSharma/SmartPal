@@ -15,6 +15,44 @@ def stop():
     st.session_state.stop_pressed = True
 
 
+def has_special_formatting(text):
+    """Check if text contains bullet points, numbered lists, or multiple paragraphs"""
+    formatting_indicators = [
+        '•', '*', '-', '1.', '2.', '3.', '\n\n', 
+        '**', '__', '#', '###', '>', '|'
+    ]
+    return any(indicator in text for indicator in formatting_indicators)
+
+
+def render_formatted_response(placeholder, text):
+    """Render formatted text with better visual effects"""
+    import re
+    
+    # Split text into logical sections
+    sections = re.split(r'(\n\n|\n(?=\d+\.|\n(?=•|\*|-)))', text)
+    full_content = ""
+    
+    for i, section in enumerate(sections):
+        if st.session_state.stop_pressed:
+            full_content += "\n\n[Response stopped by user]"
+            break
+            
+        section = section.strip()
+        if not section:
+            continue
+            
+        full_content += section + "\n\n" if i < len(sections) - 1 else section
+        
+        # Add animated content wrapper for better visual appeal
+        placeholder.markdown(f'<div class="animated-content">{full_content}</div>', 
+                           unsafe_allow_html=True)
+        time.sleep(0.3)  # Slower for formatted content
+    
+    # Final render without wrapper
+    placeholder.markdown(full_content)
+    return full_content
+
+
 # def deploy():
 #     subprocess.run([f"{sys.executable}",  "training/vector_store.py"])
 
@@ -57,6 +95,51 @@ if __name__ == "__main__":
         .stChatInput {
             padding-top: 1rem;
         }
+        /* Enhanced markdown styling for better readability */
+        .stMarkdown {
+            line-height: 1.6;
+        }
+        .stMarkdown ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        .stMarkdown li {
+            margin: 0.3rem 0;
+            line-height: 1.5;
+        }
+        .stMarkdown p {
+            margin: 0.8rem 0;
+            line-height: 1.6;
+        }
+        .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+            margin: 1rem 0 0.5rem 0;
+            color: #4CAF50;
+        }
+        .stMarkdown strong {
+            color: #2E7D32;
+            font-weight: 600;
+        }
+        .stMarkdown blockquote {
+            border-left: 4px solid #4CAF50;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            background-color: #f8f9fa;
+        }
+        /* Animate bullet points appearing */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated-content {
+            animation: fadeInUp 0.3s ease-out;
+        }
         </style>
     """, unsafe_allow_html=True)
 
@@ -66,7 +149,7 @@ if __name__ == "__main__":
     # Initialize session state variables
     if 'CHAIN_MEMORY' not in st.session_state:
         st.session_state.CHAIN_MEMORY = ConversationBufferWindowMemory(
-            k=5, 
+            k=2, 
             return_messages=True, 
             memory_key="chat_history"
         )
@@ -141,32 +224,41 @@ if __name__ == "__main__":
                     result['answer'] = "I'm sorry, I encountered an error. Please try again."
                     print(f"Unexpected error: {e}")
 
-            # Streaming response effect
+            # Streaming response effect with better formatting
             full_response = ""
             try:
                 response_text = result.get('answer', result.get('text', ''))
-                split_res = response_text.split()
-            except Exception as e:
-                split_res = ["Sorry,", "I", "couldn't", "process", "your", "request."]
-                print(f"Error processing response: {e}")
-            
-            # Check for stop condition during streaming
-            for i, chunk in enumerate(split_res):
-                if st.session_state.stop_pressed:
-                    full_response += " [Response stopped by user]"
-                    break
+                
+                # Handle different types of content formatting
+                if has_special_formatting(response_text):
+                    # For content with bullet points, paragraphs, etc.
+                    full_response = render_formatted_response(message_placeholder, response_text)
+                else:
+                    # For simple text, use word-by-word streaming
+                    split_res = response_text.split()
                     
-                full_response += chunk + " "
-                message_placeholder.markdown(full_response + "▌")  # Cursor effect
-                time.sleep(0.05)  # Reduced sleep time for better UX
-            
-            # Final response without cursor
-            message_placeholder.markdown(full_response.strip())
+                    # Check for stop condition during streaming
+                    for i, chunk in enumerate(split_res):
+                        if st.session_state.stop_pressed:
+                            full_response += " [Response stopped by user]"
+                            break
+                            
+                        full_response += chunk + " "
+                        message_placeholder.markdown(full_response + "▌")  # Cursor effect
+                        time.sleep(0.05)  # Reduced sleep time for better UX
+                    
+                    # Final response without cursor
+                    message_placeholder.markdown(full_response.strip())
+                    
+            except Exception as e:
+                full_response = "Sorry, I couldn't process your request."
+                message_placeholder.markdown(full_response)
+                print(f"Error processing response: {e}")
             
             # Add assistant response to chat history
             st.session_state.messages.append({
                 "role": "assistant", 
-                "content": full_response.strip()
+                "content": full_response.strip() if full_response else response_text
             })
             
         # Reset stop flag
