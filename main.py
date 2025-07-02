@@ -138,13 +138,13 @@ if __name__ == "__main__":
                         st.write(f"DEBUG: Processed selection text: '{selection_text}'")
                     
                     # More flexible routing logic
-                    if "yes\n" in selection_text:
+                    if "yes" in selection_text:
                         if st.session_state.debug_mode:
                             st.write("DEBUG: Routing to greet_chain")
                         result = greet_chain_.invoke({"question": prompt})
                         if st.session_state.debug_mode:
                             st.write(f"DEBUG: Greet chain result: {result}")
-                    elif "no\n" in selection_text:
+                    elif "no" in selection_text:
                         if st.session_state.debug_mode:
                             st.write("DEBUG: Routing to qa_chain")
                         result = qa_chain.invoke({"question": prompt})
